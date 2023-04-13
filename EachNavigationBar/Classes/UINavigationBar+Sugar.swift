@@ -13,7 +13,6 @@ extension UINavigationBar {
         setTitleColor(color.withAlphaComponent(alpha))
     }
     
-    @available(iOS 11.0, *)
     public func setLargeTitleAlpha(_ alpha: CGFloat) {
         let color = largeTitleTextAttributes?[.foregroundColor] as? UIColor ?? defaultTitleColor
         setLargeTitleColor(color.withAlphaComponent(alpha))
@@ -39,7 +38,6 @@ private extension UINavigationBar {
         }
     }
     
-    @available(iOS 11.0, *)
     func setLargeTitleColor(_ color: UIColor) {
         if var largeTitleTextAttributes = largeTitleTextAttributes {
             largeTitleTextAttributes[.foregroundColor] = color

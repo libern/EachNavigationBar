@@ -35,8 +35,7 @@ public final class Configuration {
     
     /// Additional height for the navigation bar.
     public var additionalHeight: CGFloat = 0
-    
-    @available(iOS 11.0, *)
+
     /// Padding of navigation bar content view.
     public lazy var layoutPaddings: UIEdgeInsets = {
         Const.NavigationBar.layoutPaddings
@@ -55,7 +54,6 @@ public final class Configuration {
 
 extension Configuration {
     
-    @available(iOS 11.0, *)
     public var largeTitleTextAttributes: [NSAttributedString.Key: Any]? {
         get { return _largeTitleTextAttributes }
         set { _largeTitleTextAttributes = newValue }

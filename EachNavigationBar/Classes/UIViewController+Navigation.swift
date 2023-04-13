@@ -27,7 +27,6 @@ public extension Navigation where Base: UINavigationController {
         return base._configuration
     }
     
-    @available(iOS 11.0, *)
     func prefersLargeTitles() {
         base.navigationBar.prefersLargeTitles = true
     }

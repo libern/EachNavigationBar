@@ -112,7 +112,6 @@ extension EachNavigationBar {
         return viewController?.navigationController?.navigationBar
     }
     
-    @available(iOS 11.0, *)
     private var contentView: UIView? {
         if let contentView = _contentView { return contentView }
         

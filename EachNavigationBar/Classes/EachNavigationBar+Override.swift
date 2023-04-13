@@ -39,7 +39,6 @@ extension EachNavigationBar {
 
 extension EachNavigationBar {
     
-    @available(iOS 11.0, *)
     open override var prefersLargeTitles: Bool {
         get { return super.prefersLargeTitles }
         set {
@@ -49,7 +48,6 @@ extension EachNavigationBar {
         }
     }
     
-    @available(iOS 11.0, *)
     open override var largeTitleTextAttributes: [NSAttributedString.Key : Any]? {
         get { return super.largeTitleTextAttributes }
         set {
